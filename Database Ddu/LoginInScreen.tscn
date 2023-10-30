@@ -1,0 +1,50 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://154346.png" type="Texture" id=1]
+
+[node name="LoginScreen2" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 35.0
+margin_top = 35.0
+margin_right = 988.0
+margin_bottom = 576.0
+
+[node name="Title" type="Label" parent="VBoxContainer"]
+margin_right = 953.0
+margin_bottom = 14.0
+text = "Login screen"
+
+[node name="UsernameTitle" type="Label" parent="VBoxContainer"]
+margin_top = 18.0
+margin_right = 953.0
+margin_bottom = 32.0
+text = "Username"
+
+[node name="Username" type="LineEdit" parent="VBoxContainer"]
+margin_top = 36.0
+margin_right = 953.0
+margin_bottom = 60.0
+
+[node name="PasswordTitle" type="Label" parent="VBoxContainer"]
+margin_top = 64.0
+margin_right = 953.0
+margin_bottom = 78.0
+text = "Password"
+
+[node name="Password" type="LineEdit" parent="VBoxContainer"]
+margin_top = 82.0
+margin_right = 953.0
+margin_bottom = 106.0
+
+[node name="LoginButton" type="TextureButton" parent="VBoxContainer"]
+margin_left = 326.0
+margin_top = 110.0
+margin_right = 626.0
+margin_bottom = 344.0
+rect_min_size = Vector2( 300, 234 )
+size_flags_horizontal = 4
+texture_normal = ExtResource( 1 )
+expand = true
