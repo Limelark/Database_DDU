@@ -23,7 +23,7 @@ text = "Login screen"
 margin_top = 18.0
 margin_right = 953.0
 margin_bottom = 32.0
-text = "Username"
+text = "Email"
 
 [node name="Username" type="LineEdit" parent="VBoxContainer"]
 margin_top = 36.0
