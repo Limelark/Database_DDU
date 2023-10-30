@@ -51,6 +51,14 @@ size_flags_horizontal = 4
 texture_normal = ExtResource( 1 )
 expand = true
 
+[node name="Signup" type="Button" parent="VBoxContainer"]
+margin_top = 348.0
+margin_right = 953.0
+margin_bottom = 368.0
+
+[node name="HTTPRequest" type="HTTPRequest" parent="."]
+
 [connection signal="text_changed" from="VBoxContainer/Username" to="." method="_on_Username_text_changed"]
 [connection signal="text_changed" from="VBoxContainer/Password" to="." method="_on_Password_text_changed"]
 [connection signal="pressed" from="VBoxContainer/LoginButton" to="." method="_on_LoginButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/Signup" to="." method="_on_Signup_pressed"]

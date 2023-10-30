@@ -2,26 +2,24 @@ extends Control
 
 var email = null
 var password = null
-
+var username = null
 
 func _ready():
 	$HTTPRequest.connect("request_completed", self, "_on_request_completed")
 
-func _on_Username_text_changed(new_text):
+func _on_Email_text_changed(new_text):
 	email = new_text
 	
 
 func _on_Password_text_changed(new_text):
 	password = new_text
 
-func _on_Signup_pressed():
-	var scene_to_load = "res://SignupScreen.tscn"
-	get_tree().change_scene(scene_to_load)
+func _on_Username_text_changed(new_text):
+	username = new_text
 
 func _on_LoginButton_pressed():
-	$HTTPRequest.request("http://localhost/apps/Godot%20Server/login.php?email="+email+"&password="+password)
-
-
+	print(email, username, password)
+	$HTTPRequest.request("http://localhost/apps/Godot%20Server/signup.php?email="+email+"&password="+password+"&username="+username)
 
 func _on_request_completed(result, response_code, headers, body):
 	if response_code == 200:
